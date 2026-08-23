@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Pritam Bhattacharya | Computer Science Student & Software Developer</title>
+    <meta name="description"
+        content="Official Portfolio of Pritam Bhattacharya - Computer Science Student, Web Developer, and Software Engineer specializing in Frontend, Python, Java, C++, and DSA.">
+    <meta name="keywords"
+        content="Pritam Bhattacharya, Portfolio, Web Developer, Software Engineer, Computer Science, Frontend Developer, Java, Python, C++, React, DSA, Midnapore City College">
+    <meta name="author" content="Pritam Bhattacharya">
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:title" content="Pritam Bhattacharya | Developer Portfolio">
+    <meta property="og:description"
+        content="Explore projects, skills, certifications, and academic background of Pritam Bhattacharya.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Profile picture.jpeg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+    <!-- Ambient Glowing Orbs -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>Pritam<span class="logo-dot">.</span><span
+                    class="logo-bracket">/&gt;</span>
+            </a>
+
+            <div class="nav-right">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark and Light Mode"
+                    title="Toggle Theme">
+                    <span class="theme-icon sun-icon">☀️</span>
+                    <span class="theme-icon moon-icon">🌙</span>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-btn" id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- ================= HERO ================= -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <div class="badge-status">
+                        <span class="status-dot pulse"></span>
+                        <span>Available for Internships & Projects</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Pritam Bhattacharya</span>
+                    </h1>
+
+                    <div class="hero-role-wrapper">
+                        <span class="role-prefix">I am a</span>
+                        <span id="typing" class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+
+                    <p class="hero-desc">
+                        Passionate Computer Science student and aspiring software engineer dedicated to building
+                        scalable web applications, intuitive user interfaces, and solving real-world challenges through
+                        clean, efficient code.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+
+                        <button id="view-resume-btn" class="btn btn-outline">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            <span>Resume / CV</span>
+                        </button>
+
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon"
+                            title="GitHub Profile" aria-label="GitHub Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon"
+                            title="LinkedIn Profile" aria-label="LinkedIn Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="mailto:pritambhattacharya036@gmail.com" class="social-icon" title="Send Email"
+                            aria-label="Send Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/919749586474" target="_blank" rel="noopener noreferrer"
+                            class="social-icon" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="avatar-glow-ring"></div>
+                    <div class="avatar-container">
+                        <img src="Profile picture.jpeg" alt="Pritam Bhattacharya" class="avatar-img" width="380"
+                            height="380">
+                    </div>
+
+                    <!-- Floating Feature Badges -->
+                    <div class="floating-badge badge-top-right">
+                        <span class="badge-icon">🎓</span>
+                        <div class="badge-content">
+                            <span class="badge-title">B.Sc Computer Science</span>
+                            <span class="badge-sub">Midnapore City College</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge badge-bottom-left">
+                        <span class="badge-icon">⚡</span>
+                        <div class="badge-content">
+                            <span class="badge-title">Full Stack & DSA</span>
+                            <span class="badge-sub">Problem Solver</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT & IMPACT METRICS ================= -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">ABOUT ME</span>
+                    <h2 class="section-title">Turning Ideas into <span class="gradient-text">Functional Reality</span>
+                    </h2>
+                    <p class="section-subtitle">A brief overview of my journey, technical vision, and core focus areas.
+                    </p>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">🚀</div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="5">0+</h3>
+                            <p class="stat-label">Featured Projects</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">💻</div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="10">0+</h3>
+                            <p class="stat-label">Technologies Mastered</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">🧠</div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="100">0+</h3>
+                            <p class="stat-label">DSA Problems Solved</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">🎓</div>
+                        <div class="stat-info">
+                            <h3 class="stat-number stat-text">2027</h3>
+                            <p class="stat-label">Graduation Year</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-bio-card">
+                        <h3 class="about-heading">Hello! I'm Pritam Bhattacharya</h3>
+                        <p class="about-para">
+                            I am a Computer Science undergraduate at <strong>Midnapore City College</strong> with a deep
+                            fascination for software architecture, web development, and algorithmic problem-solving.
+                        </p>
+                        <p class="about-para">
+                            My journey is driven by curiosity and continuous learning. From crafting responsive,
+                            accessible user interfaces using modern CSS & JavaScript to designing robust backend logic
+                            in Python, Java, and C++, I enjoy building software that delivers genuine value.
+                        </p>
+
+                        <div class="info-chips-grid">
+                            <div class="info-chip">
+                                <span class="chip-label">Name:</span>
+                                <span class="chip-val">Pritam Bhattacharya</span>
+                            </div>
+                            <div class="info-chip">
+                                <span class="chip-label">Degree:</span>
+                                <span class="chip-val">B.Sc. in Computer Science</span>
+                            </div>
+                            <div class="info-chip">
+                                <span class="chip-label">College:</span>
+                                <span class="chip-val">Midnapore City College</span>
+                            </div>
+                            <div class="info-chip">
+                                <span class="chip-label">Location:</span>
+                                <span class="chip-val">West Bengal, India</span>
+                            </div>
+                            <div class="info-chip">
+                                <span class="chip-label">Email:</span>
+                                <span class="chip-val">pritambhattacharya036@gmail.com</span>
+                            </div>
+                            <div class="info-chip">
+                                <span class="chip-label">Status:</span>
+                                <span class="chip-val highlight">Open for Opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pillars-grid">
+                        <div class="pillar-card">
+                            <div class="pillar-icon">🌐</div>
+                            <h4>Frontend Development</h4>
+                            <p>Modern HTML5, CSS3, ES6+ JavaScript, responsive web layouts, and interactive design
+                                systems.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-icon">⚙️</div>
+                            <h4>Backend & Databases</h4>
+                            <p>API integrations, structured relational database design with SQL/MySQL, and Python/Java
+                                backends.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-icon">🧩</div>
+                            <h4>Data Structures & Algorithms</h4>
+                            <p>Efficient problem solving, algorithmic optimization, memory management, and recursion in
+                                C++ and Java.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-icon">🛠️</div>
+                            <h4>Tools & Collaboration</h4>
+                            <p>Version control with Git/GitHub, debugging workflows, and modern development best
+                                practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS ================= -->
+        <section class="section skills" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">TECH STACK</span>
+                    <h2 class="section-title">My Technical <span class="gradient-text">Expertise</span></h2>
+                    <p class="section-subtitle">Languages, libraries, and tools I use to create robust digital
+                        solutions.</p>
+                </div>
+
+                <!-- Skill Filter Tabs -->
+                <div class="filter-tabs-container">
+                    <div class="filter-tabs" id="skill-filter-tabs">
+                        <button class="filter-tab active" data-skill-filter="all">All Skills</button>
+                        <button class="filter-tab" data-skill-filter="frontend">Frontend</button>
+                        <button class="filter-tab" data-skill-filter="backend">Backend & DB</button>
+                        <button class="filter-tab" data-skill-filter="languages">Languages</button>
+                        <button class="filter-tab" data-skill-filter="tools">Tools & Core</button>
+                    </div>
+                </div>
+
+                <div class="skills-grid" id="skills-container">
+                    <!-- HTML5 -->
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">🌐</div>
+                            <div class="skill-info">
+                                <h3>HTML5</h3>
+                                <span class="skill-cat-badge">Frontend</span>
+                            </div>
+                            <span class="skill-pct">92%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="92%"></div>
+                        </div>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">🎨</div>
+                            <div class="skill-info">
+                                <h3>CSS3 / Flexbox / Grid</h3>
+                                <span class="skill-cat-badge">Frontend</span>
+                            </div>
+                            <span class="skill-pct">88%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="88%"></div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">⚡</div>
+                            <div class="skill-info">
+                                <h3>JavaScript (ES6+)</h3>
+                                <span class="skill-cat-badge">Frontend</span>
+                            </div>
+                            <span class="skill-pct">80%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">🐍</div>
+                            <div class="skill-info">
+                                <h3>Python</h3>
+                                <span class="skill-cat-badge">Languages</span>
+                            </div>
+                            <span class="skill-pct">82%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="82%"></div>
+                        </div>
+                    </div>
+
+                    <!-- C++ -->
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">🚀</div>
+                            <div class="skill-info">
+                                <h3>C++</h3>
+                                <span class="skill-cat-badge">Languages</span>
+                            </div>
+                            <span class="skill-pct">78%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="78%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Java -->
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">☕</div>
+                            <div class="skill-info">
+                                <h3>Java</h3>
+                                <span class="skill-cat-badge">Languages</span>
+                            </div>
+                            <span class="skill-pct">72%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="72%"></div>
+                        </div>
+                    </div>
+
+                    <!-- C -->
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">💻</div>
+                            <div class="skill-info">
+                                <h3>C Programming</h3>
+                                <span class="skill-cat-badge">Languages</span>
+                            </div>
+                            <span class="skill-pct">75%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="75%"></div>
+                        </div>
+                    </div>
+
+                    <!-- SQL / MySQL -->
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">🗄️</div>
+                            <div class="skill-info">
+                                <h3>SQL / Relational Databases</h3>
+                                <span class="skill-cat-badge">Backend</span>
+                            </div>
+                            <span class="skill-pct">85%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Git & GitHub -->
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">🐙</div>
+                            <div class="skill-info">
+                                <h3>Git & GitHub</h3>
+                                <span class="skill-cat-badge">Tools</span>
+                            </div>
+                            <span class="skill-pct">78%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="78%"></div>
+                        </div>
+                    </div>
+
+                    <!-- DSA -->
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">🧠</div>
+                            <div class="skill-info">
+                                <h3>Data Structures & Algorithms</h3>
+                                <span class="skill-cat-badge">Core CS</span>
+                            </div>
+                            <span class="skill-pct">76%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="76%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS ================= -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">PORTFOLIO</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">Real-world applications, algorithmic tools, and web platforms I have
+                        developed.</p>
+                </div>
+
+                <!-- Project Filter Controls -->
+                <div class="filter-tabs-container">
+                    <div class="filter-tabs" id="project-filter-tabs">
+                        <button class="filter-tab active" data-project-filter="all">All Projects</button>
+                        <button class="filter-tab" data-project-filter="web">Web Apps</button>
+                        <button class="filter-tab" data-project-filter="python">Python & AI</button>
+                        <button class="filter-tab" data-project-filter="algo">Algorithms & Tools</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1: EduConnect -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-img-box">
+                            <img src="project_educonnect.jpg" alt="EduConnect Campus Portal" class="project-img"
+                                loading="lazy">
+                            <div class="project-overlay">
+                                <button class="overlay-btn view-details-btn" data-project="educonnect">
+                                    Quick Preview
+                                </button>
+                            </div>
+                            <span class="project-pill">Full Stack</span>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>MySQL</span>
+                            </div>
+
+                            <h3 class="project-title">EduConnect - Smart Campus Portal</h3>
+                            <p class="project-desc">
+                                A comprehensive student management dashboard featuring attendance analytics, timetable
+                                schedules, grade calculation, and course tracking with an intuitive glassmorphic UI.
+                            </p>
+
+                            <div class="project-footer">
+                                <button class="btn-link view-details-btn" data-project="educonnect">
+                                    Details & Overview →
+                                </button>
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                                    class="project-github-icon" title="View Source Code">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: AlgoVision -->
+                    <div class="project-card" data-category="algo">
+                        <div class="project-img-box">
+                            <img src="project_algo.jpg" alt="AlgoVision Algorithm Visualizer" class="project-img"
+                                loading="lazy">
+                            <div class="project-overlay">
+                                <button class="overlay-btn view-details-btn" data-project="algovision">
+                                    Quick Preview
+                                </button>
+                            </div>
+                            <span class="project-pill">Algorithms</span>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>Canvas API</span>
+                                <span>DSA</span>
+                                <span>C++</span>
+                            </div>
+
+                            <h3 class="project-title">AlgoVision - Algorithm Visualizer</h3>
+                            <p class="project-desc">
+                                Interactive visualizer for sorting algorithms (QuickSort, MergeSort, HeapSort) and graph
+                                pathfinding algorithms (Dijkstra, BFS, DFS) with real-time speed control and step
+                                execution.
+                            </p>
+
+                            <div class="project-footer">
+                                <button class="btn-link view-details-btn" data-project="algovision">
+                                    Details & Overview →
+                                </button>
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                                    class="project-github-icon" title="View Source Code">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: TaskMaster AI -->
+                    <div class="project-card" data-category="python">
+                        <div class="project-img-box">
+                            <img src="project_taskmate.jpg" alt="TaskMaster AI" class="project-img" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="overlay-btn view-details-btn" data-project="taskmaster">
+                                    Quick Preview
+                                </button>
+                            </div>
+                            <span class="project-pill">Python & AI</span>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>REST API</span>
+                                <span>UI Design</span>
+                            </div>
+
+                            <h3 class="project-title">TaskMaster AI - Smart Workflow</h3>
+                            <p class="project-desc">
+                                Intelligent productivity suite featuring automated Kanban prioritization, deadline
+                                forecasting, AI-powered suggestion bot, and calendar synchronization.
+                            </p>
+
+                            <div class="project-footer">
+                                <button class="btn-link view-details-btn" data-project="taskmaster">
+                                    Details & Overview →
+                                </button>
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                                    class="project-github-icon" title="View Source Code">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EDUCATION ================= -->
+        <section class="section education" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">ACADEMIC BACKGROUND</span>
+                    <h2 class="section-title">My Educational <span class="gradient-text">Journey</span></h2>
+                    <p class="section-subtitle">Academic foundations, honors, and computer science coursework.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- College Milestone -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div class="timeline-year-badge">2023 - 2027 (Undergraduate)</div>
+                                <span class="inst-tag">College</span>
+                            </div>
+
+                            <h3 class="timeline-degree">Bachelor of Science in Computer Science</h3>
+                            <h4 class="timeline-inst">Midnapore City College</h4>
+
+                            <p class="timeline-desc">
+                                Pursuing comprehensive studies in computer science fundamentals including Data
+                                Structures & Algorithms, Object-Oriented Programming, Database Management Systems,
+                                Computer Networks, and Full-Stack Web Technologies.
+                            </p>
+
+                            <div class="timeline-photo-row">
+                                <div class="photo-thumbnail lightbox-trigger" data-img="Mcc.jpg"
+                                    data-caption="Midnapore City College Campus">
+                                    <img src="Mcc.jpg" alt="Midnapore City College">
+                                    <span class="photo-hint">🔍 View Campus Photo</span>
+                                </div>
+                            </div>
+
+                            <div class="coursework-tags">
+                                <span>Data Structures & C++</span>
+                                <span>Java & OOPs</span>
+                                <span>RDBMS & SQL</span>
+                                <span>Web Development</span>
+                                <span>Software Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Higher Secondary Milestone -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div class="timeline-year-badge">2023 Completed</div>
+                                <span class="inst-tag">Higher Secondary (10+2)</span>
+                            </div>
+
+                            <h3 class="timeline-degree">Higher Secondary Education (Science Stream)</h3>
+                            <h4 class="timeline-inst">Madanmohanchak Chowdhury Institution</h4>
+
+                            <p class="timeline-desc">
+                                Completed senior secondary school with a focus on Pure Science, mathematics, and
+                                computer fundamentals, developing strong logical analytical skills.
+                            </p>
+
+                            <div class="timeline-photo-row">
+                                <div class="photo-thumbnail lightbox-trigger" data-img="School.jpg"
+                                    data-caption="Madanmohanchak Chowdhury Institution">
+                                    <img src="School.jpg" alt="Madanmohanchak Chowdhury Institution">
+                                    <span class="photo-hint">🔍 View Institution Photo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Secondary Milestone -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div class="timeline-year-badge">2021 Completed</div>
+                                <span class="inst-tag">Secondary (10th)</span>
+                            </div>
+
+                            <h3 class="timeline-degree">Secondary Education (Madhyamik)</h3>
+                            <h4 class="timeline-inst">Madanmohanchak Chowdhury Institution</h4>
+
+                            <p class="timeline-desc">
+                                Completed high school education with strong academic performance and participation in
+                                science and technology competitions.
+                            </p>
+
+                            <div class="timeline-photo-row">
+                                <div class="photo-thumbnail lightbox-trigger" data-img="School.jpg"
+                                    data-caption="Madanmohanchak Chowdhury Institution">
+                                    <img src="School.jpg" alt="Madanmohanchak Chowdhury Institution">
+                                    <span class="photo-hint">🔍 View Institution Photo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CERTIFICATES ================= -->
+        <section class="section certificates" id="certificates">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">CREDENTIALS</span>
+                    <h2 class="section-title">Certifications & <span class="gradient-text">Achievements</span></h2>
+                    <p class="section-subtitle">Verified industry credentials and professional technical certifications.
+                    </p>
+                </div>
+
+                <div class="cert-grid">
+                    <!-- IBM Certificate Card -->
+                    <div class="cert-card">
+                        <div class="cert-img-wrap lightbox-trigger" data-img="ibm_certificate_thumb.jpg"
+                            data-caption="IBM Applied Data Science & Professional Certificate">
+                            <img src="ibm_certificate_thumb.jpg" alt="IBM Professional Certificate" class="cert-img">
+                            <div class="cert-overlay">
+                                <span class="cert-badge-pulse">Verified Credential</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-content">
+                            <div class="cert-issuer-badge">
+                                <span>🏢 IBM Certified</span>
+                            </div>
+
+                            <h3 class="cert-title">IBM Professional & Applied Technology Certificate</h3>
+                            <h4 class="cert-org">Issued by IBM</h4>
+
+                            <p class="cert-desc">
+                                Verified certification in technology concepts, industry standard development
+                                methodologies, problem solving, and analytical data skills.
+                            </p>
+
+                            <div class="cert-tags">
+                                <span>Software Development</span>
+                                <span>Data Science</span>
+                                <span>Python</span>
+                                <span>IBM Cloud</span>
+                            </div>
+
+                            <div class="cert-action-row">
+                                <button class="btn btn-primary btn-sm" id="view-cert-modal-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    <span>Preview Certificate</span>
+                                </button>
+
+                                <a href="IBM Certificate.pdf" download="Pritam_Bhattacharya_IBM_Certificate.pdf"
+                                    class="btn btn-outline btn-sm">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="7 10 12 15 17 10"></polyline>
+                                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                                    </svg>
+                                    <span>Download PDF</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">CONNECT</span>
+                    <h2 class="section-title">Let's Build Something <span class="gradient-text">Amazing Together</span>
+                    </h2>
+                    <p class="section-subtitle">Open for software roles, internships, freelance projects, and tech
+                        collaborations.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Info Panel -->
+                    <div class="contact-info-panel">
+                        <h3 class="contact-panel-title">Get in Touch</h3>
+                        <p class="contact-panel-desc">
+                            Have an exciting project, internship opportunity, or just want to talk about technology?
+                            Reach out anytime!
+                        </p>
+
+                        <div class="contact-methods">
+                            <!-- Email Item with 1-click copy -->
+                            <div class="contact-card-item">
+                                <div class="contact-icon-box">📧</div>
+                                <div class="contact-text-box">
+                                    <span class="contact-label">Email Address</span>
+                                    <a href="mailto:pritambhattacharya036@gmail.com"
+                                        class="contact-val">pritambhattacharya036@gmail.com</a>
+                                </div>
+                                <button class="copy-btn" data-copy="pritambhattacharya036@gmail.com"
+                                    title="Copy Email to Clipboard">
+                                    📋
+                                </button>
+                            </div>
+
+                            <!-- Phone Item with 1-click copy -->
+                            <div class="contact-card-item">
+                                <div class="contact-icon-box">📞</div>
+                                <div class="contact-text-box">
+                                    <span class="contact-label">Phone & WhatsApp</span>
+                                    <a href="tel:+919749586474" class="contact-val">+91 9749586474</a>
+                                </div>
+                                <button class="copy-btn" data-copy="+919749586474" title="Copy Phone Number">
+                                    📋
+                                </button>
+                            </div>
+
+                            <!-- Location Item -->
+                            <div class="contact-card-item">
+                                <div class="contact-icon-box">📍</div>
+                                <div class="contact-text-box">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-val">West Bengal, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Direct WhatsApp Launcher -->
+                        <div class="whatsapp-cta-box">
+                            <a href="https://wa.me/919749586474?text=Hi%20Pritam,%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20connect!"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                                <span>💬 Chat Directly on WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel">
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <h3 class="form-title">Send a Direct Message</h3>
+
+                            <div class="form-group">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-input"
+                                    placeholder="e.g. Alex Johnson" required>
+                                <span class="form-error" id="name-error">Please enter your name</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" id="email" name="email" class="form-input"
+                                    placeholder="e.g. alex@example.com" required>
+                                <span class="form-error" id="email-error">Please enter a valid email address</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input"
+                                    placeholder="Project Collaboration / Internship Inquiry">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-input form-textarea"
+                                    placeholder="Describe your message or requirements here..." required></textarea>
+                                <span class="form-error" id="message-error">Please provide a message</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                                <span>Send Message</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-bracket">&lt;</span>Pritam<span class="logo-dot">.</span><span
+                        class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-tagline">
+                    Computer Science Student & Web Developer crafting clean, modern digital experiences.
+                </p>
+            </div>
+
+            <div class="footer-links-group">
+                <h4>Quick Links</h4>
+                <ul class="footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social-group">
+                <h4>Connect With Me</h4>
+                <div class="footer-social-icons">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:pritambhattacharya036@gmail.com" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Pritam Bhattacharya. Built with HTML5, CSS3 & Modern JavaScript.</p>
+        </div>
+    </footer>
+
+    <!-- ================= BACK TO TOP BUTTON ================= -->
+    <button id="top-btn" class="top-btn" aria-label="Scroll to top" title="Scroll to top">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- ================= MODALS ================= -->
+
+    <!-- 1. Image Lightbox Modal -->
+    <div id="lightbox-modal" class="modal" role="dialog" aria-hidden="true">
+        <div class="modal-overlay" data-close="true"></div>
+        <div class="modal-content lightbox-content">
+            <button class="modal-close-btn" data-close="true" aria-label="Close modal">×</button>
+            <div class="lightbox-img-box">
+                <img id="lightbox-img" src="" alt="Enlarged view">
+            </div>
+            <p id="lightbox-caption" class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- 2. Project Details Modal -->
+    <div id="project-modal" class="modal" role="dialog" aria-hidden="true">
+        <div class="modal-overlay" data-close="true"></div>
+        <div class="modal-content project-modal-box">
+            <button class="modal-close-btn" data-close="true" aria-label="Close modal">×</button>
+            <div id="project-modal-body">
+                <!-- Dynamically injected via script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Certificate Modal -->
+    <div id="cert-modal" class="modal" role="dialog" aria-hidden="true">
+        <div class="modal-overlay" data-close="true"></div>
+        <div class="modal-content cert-modal-box">
+            <button class="modal-close-btn" data-close="true" aria-label="Close modal">×</button>
+            <div class="cert-modal-header">
+                <h3>IBM Applied Data Science & Professional Certificate</h3>
+                <span class="cert-modal-badge">Official Credential</span>
+            </div>
+            <div class="cert-modal-body">
+                <div class="cert-modal-img-wrap">
+                    <img src="ibm_certificate_thumb.jpg" alt="IBM Certificate">
+                </div>
+                <div class="cert-modal-details">
+                    <p><strong>Issued To:</strong> Pritam Bhattacharya</p>
+                    <p><strong>Issuing Organization:</strong> IBM</p>
+                    <p><strong>Curriculum:</strong> Software Engineering, Python Programming, Applied Data Science &
+                        Industry Methodologies.</p>
+                    <div class="cert-modal-buttons">
+                        <a href="IBM Certificate.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <span>Open Full PDF Document</span>
+                        </a>
+                        <a href="IBM Certificate.pdf" download="Pritam_Bhattacharya_IBM_Certificate.pdf"
+                            class="btn btn-outline">
+                            <span>Download PDF</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Resume Modal -->
+    <div id="resume-modal" class="modal" role="dialog" aria-hidden="true">
+        <div class="modal-overlay" data-close="true"></div>
+        <div class="modal-content resume-modal-box">
+            <button class="modal-close-btn" data-close="true" aria-label="Close modal">×</button>
+            <div class="resume-modal-header">
+                <h3>Curriculum Vitae / Resume Summary</h3>
+                <span class="status-badge-mini">Updated 2026</span>
+            </div>
+            <div class="resume-modal-body">
+                <div class="resume-preview-card">
+                    <h4>Pritam Bhattacharya</h4>
+                    <p class="resume-role">Computer Science Student | Web Developer | Problem Solver</p>
+                    <hr class="resume-divider">
+                    <div class="resume-section">
+                        <h5>Education</h5>
+                        <p><strong>B.Sc. in Computer Science</strong> (2023 - 2027) — Midnapore City College</p>
+                        <p><strong>Higher Secondary (Science)</strong> (2023) — Madanmohanchak Chowdhury Institution</p>
+                    </div>
+                    <div class="resume-section">
+                        <h5>Key Technical Skills</h5>
+                        <p>HTML5, CSS3, JavaScript, Java, Python, C, C++, SQL, Git, DSA</p>
+                    </div>
+                    <div class="resume-section">
+                        <h5>Contact</h5>
+                        <p>pritambhattacharya036@gmail.com | +91 9749586474 | West Bengal, India</p>
+                    </div>
+                </div>
+
+                <div class="resume-actions">
+                    <a href="IBM Certificate.pdf" target="_blank" class="btn btn-primary">
+                        <span>View Verified Credentials</span>
+                    </a>
+                    <a href="IBM Certificate.pdf" download="Pritam_Bhattacharya_Resume.pdf" class="btn btn-outline">
+                        <span>Download Resume (PDF)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= TOAST NOTIFICATION CONTAINER ================= -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

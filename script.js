@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
        4. Account -> API Keys -> Copy your PUBLIC_KEY
     ========================================================== */
     const EMAILJS_CONFIG = {
-        publicKey: "crE5OfEb948zD6NBI",
+        publicKey: "3_2yX7D4p-bCsJgcN",
         serviceId: "service_uq694hb",
         templateId: "template_3h3e31a"
     };

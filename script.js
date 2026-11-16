@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ========================================================== */
     const EMAILJS_CONFIG = {
         publicKey: "crE5OfEb948zD6NBI",
-        serviceId: "service_19rgyin",
+        serviceId: "service_uq694hb",
         templateId: "template_3h3e31a"
     };
 
